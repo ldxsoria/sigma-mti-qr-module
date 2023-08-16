@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+
+  td {
+    width: 3.5cm;
+    height: 5cm;
+    border: thin solid rgba(0, 0, 0, 0.5);
+}
+.sticker-container{
+    /*border: thin solid black;*/
+    width: 100%;
+    height: 100%;
+}
+.sticker{
+    /*border: thin solid red;*/
+    width: 100%;
+    height: 100%;
+
+}
+
+.qr {
+    width: 100%;
+    height: auto;
+    padding: 0.1rem;
+    /*border: thin solid blue;*/
+}
+
+.qr img{
+    width: 100%;
+    height: auto;
+}
+
+.codigo p{
+    text-align: center;
+}
+
+.colegio{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.titulo, .pie{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.pie {
+    background-color: black;
+    color: white;
+}
+
+.titulo {
+    color: black;
+}
