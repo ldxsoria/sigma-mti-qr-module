@@ -11,7 +11,7 @@ def crear_pdf(ruta_template,info,num_start,num_end,rutacss='./sources/estilo.css
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(ruta_template))
     template = env.get_template(nombre_template)
     html = template.render(info)
-    print(html)
+    # print(html)
 
     options = { 
                 'enable-local-file-access': True,
@@ -23,12 +23,12 @@ def crear_pdf(ruta_template,info,num_start,num_end,rutacss='./sources/estilo.css
                 'encoding': 'UTF-8'}
 
     config = pdfkit.configuration(wkhtmltopdf='./wkhtmltopdf/bin/wkhtmltopdf.exe')
-    ruta_salida = f'./sources/{nombre_pdf}.pdf'
+    ruta_salida = f'./result/{nombre_pdf}.pdf'
     pdfkit.from_string(html,ruta_salida,css=rutacss,options=options,configuration=config)#Este hace todo
 
 
 if __name__ == '__main__':
-    ruta_template = 'D:/Scripts/modulo_qr/sources/temporal.html'
+    ruta_template = './sources/temporal.html'
     info = {}
     crear_pdf(ruta_template,info)
 
