@@ -8,3 +8,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+
+#CREADOS
+sources/*pdf
+sources/*PDF
+sources/*png
+sources/*PNG
