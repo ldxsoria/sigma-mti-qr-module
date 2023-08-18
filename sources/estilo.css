@@ -10,11 +10,18 @@
     font-size: 1.6rem;
   }
 
-  td {
+.estandar {
     width: 3.5cm;
     height: 5cm;
     border: thin solid rgba(0, 0, 0, 0.5);
-}
+    }
+
+.mini {
+    width: 2cm; /*ancho*/
+    height: 1.5cm; /*alto */
+    border: thin solid rgba(0, 0, 0, 0.5);
+    }
+
 .sticker-container{
     /*border: thin solid black;*/
     width: 100%;
@@ -61,4 +68,27 @@
 
 .titulo {
     color: black;
+}
+
+
+/*MINI QR STICKER*/
+.mini-sticker{
+    /*border: thin solid red;*/
+    text-align: center;
+    width: auto;
+    height: auto;
+
+}
+
+.mini-titulo p {
+    font-size: 0.33rem;
+}
+
+.mini-qr img {
+    width: 70%;
+    height: auto;
+}
+
+.mini-codigo p {
+    font-size: 1rem;
 }
